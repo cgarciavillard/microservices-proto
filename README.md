@@ -1,3 +1,7 @@
+## MicroServices Proto
+
+### Using the Protocol Buffer Compiler
+
  ```
   protoc \
     --go_out=./golang \
@@ -8,3 +12,9 @@
     ./payment/payment.proto \
     ./shipping/shipping.proto
   ```
+
+### Creating GitHub Tags
+```
+git tag -a golang/order/v1.2.3 -m "golang/order/v1.2.3"
+git push --tags
+```
