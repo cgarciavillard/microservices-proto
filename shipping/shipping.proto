@@ -3,11 +3,13 @@ syntax = "proto3";
 option go_package = "github.com/cgarciavillard/microservices-proto/shipping";
 
 message CreateShippingRequest {
-    string address = 1;
+    int64 user_id = 1;
+    int64 order_id = 2;
+    string address = 3;
 }
 
 message CreateShippingResponse {
-
+    int64 shipping_id = 1;
 }
 
 service Shipping {
