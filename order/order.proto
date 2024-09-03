@@ -24,6 +24,7 @@ message GetOrderRequest {
 message GetOrderResponse {
     int64 user_id = 1;
     repeated OrderItem order_items = 2;
+    string status = 3;
 }
 
 service Order {
